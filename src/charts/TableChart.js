@@ -2,8 +2,6 @@ import './TableChart.css'
 
 export const TableChart = ({currentData, textField}) => {
 
-    console.log("Table", currentData)
-
     return(
         <div className="tablechart">
             <table>
