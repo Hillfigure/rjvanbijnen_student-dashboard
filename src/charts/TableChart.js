@@ -7,7 +7,7 @@ export const TableChart = ({currentData, textField}) => {
             <table>
                 <tr>
                     <th className="text-field">{textField()}</th>
-                    {!currentData ? null : currentData.map(item => <th>{item.assignment}</th>)}
+                    {!currentData ? null : currentData.map(item => <th key={ass.assignment}>{item.assignment}</th>)}
                 </tr>
 
                 {currentData && currentData[0].funFactor ? 
