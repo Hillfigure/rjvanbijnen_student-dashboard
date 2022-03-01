@@ -7,14 +7,14 @@ export const TableChart = ({currentData, textField}) => {
             <table>
                 <tr>
                     <th className="text-field">{textField()}</th>
-                    {!currentData ? null : currentData.map(item => <th key={ass.assignment}>{item.assignment}</th>)}
+                    {!currentData ? null : currentData.map(item => <th key={item.assignment}>{item.assignment}</th>)}
                 </tr>
 
                 {currentData && currentData[0].funFactor ? 
                     <tr className="fun-chart">
                         <td>Fun</td>
                         {currentData.map(ass => {
-                            return <td>{ass.funFactor}</td>
+                            return <td key={ass.assignment}>{ass.funFactor}</td>
                         })}
                     </tr>
                 : null }
@@ -23,7 +23,7 @@ export const TableChart = ({currentData, textField}) => {
                     <tr className="diff-chart">
                         <td>Difficulty</td>
                         {currentData.map(ass => {
-                            return <td>{ass.difficulty}</td>
+                            return <td key={ass.assignment}>{ass.difficulty}</td>
                         })}
                     </tr>
                 : null }
