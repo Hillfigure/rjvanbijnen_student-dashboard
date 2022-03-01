@@ -1,0 +1,74 @@
+/* GENERAL */
+
+.App {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.center-div {
+  display: inline-block;
+  margin-top: -20px;
+}
+
+/* APP - FILTER MENUS */
+
+.graph-menu > input {
+  display: none;
+}
+
+.graph-menu {
+  color: #f69000;
+}
+
+label:hover {
+  background-color: #f8f8f8;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+}
+
+.graph-menu > input[type="radio"]:checked+label{ 
+  background-color: #f8f8f8;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transform: translateY(0); 
+  color: #53b1b1;
+}
+
+/* BUTTONS */
+
+.filter-buttons {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.graph-buttons {
+  display: block;
+}
+
+.graph-buttons > label {
+  padding: 10px;
+  border-radius: 4px;
+  transition: 300ms ease-in;
+  margin: 10px;
+  font-size: 45px;
+}
+
+.filter-buttons > label {
+  padding: 5px;
+  border-radius: 4px;
+  transition: 300ms ease-in;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.student-buttons > label {
+  padding: 5px;
+  border-radius: 4px;
+  transition: 300ms ease-in;
+  font-size: 20px;
+  margin: 5px;
+}

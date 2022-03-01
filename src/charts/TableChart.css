@@ -1,0 +1,53 @@
+.tablechart {
+    margin: 0 auto;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 159px;
+    width: 95%;
+    height: 400px;
+    align-items: center;
+    font-size: 1.1em;
+    color: rgb(126, 126, 126);
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  tr:first-child {
+    background-color: rgba(241, 241, 241, 0.712);
+  }
+  
+  .fun-chart {
+    color: #f69000
+  }
+  
+  .diff-chart {
+    color: #53b1b1;
+  }
+  
+  .fun-chart, .diff-chart {
+    font-weight: bold;
+  }
+  
+  td, th {
+    padding: 4px 10px;
+    border-right: 1px solid rgb(185, 185, 185);
+  }
+  
+  tr > :first-child {
+    position: -webkit-sticky;
+    position: sticky; 
+    left: 0; 
+    box-sizing: border-box;
+    background-color: white;  
+    border-right: 2px solid rgb(185, 185, 185);
+    border-top-left-radius: 10px;
+  }
+  
+  .text-field {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #53b1b1 !important;
+  }
